@@ -39,9 +39,7 @@ type NacosRegisterConf struct {
 
 // NacosConfigConf Nacos配置中心配置
 type NacosConfigConf struct {
-	Group        string `yaml:"group" json:"group"`
-	GrpcDataId   string `yaml:"grpc-data-id" json:"grpc_data_id"`
-	OpenaiDataId string `yaml:"openai-data-id" json:"openai_data_id"`
+	Group string `yaml:"group" json:"group"`
 }
 
 // Default 为NacosConf设置默认值
@@ -87,6 +85,4 @@ func (r *NacosRegisterConf) Default() {
 
 func (c *NacosConfigConf) Default() {
 	c.Group = "DEFAULT_GROUP"
-	c.GrpcDataId = "nekoacm-server-grpc.yaml"
-	c.OpenaiDataId = "nekoacm-server-openai.yaml"
 }
