@@ -77,7 +77,7 @@ func (s *NacosServerConf) Default() {
 func (r *NacosRegisterConf) Default() {
 	r.Ip = "127.0.0.1"
 	r.Port = 14516
-	r.ServiceName = "nekoacm-server"
+	r.ServiceName = ""
 	r.Weight = 10
 	r.Enable = true
 	r.Healthy = true
