@@ -49,7 +49,10 @@ func (n *NacosConf) Default() {
 	n.Enable = false
 
 	n.Client.Default()
+
+	n.Server = make([]NacosServerConf, 1)
 	n.Server[0].Default()
+
 	n.Register.Default()
 	n.Config.Default()
 }
